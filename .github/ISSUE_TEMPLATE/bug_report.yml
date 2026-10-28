@@ -1,0 +1,50 @@
+name: Bug report
+description: Something does not work, or works wrongly.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting it. Please look at the [troubleshooting pages](https://transcode.aarondyck.ca/docs/troubleshooting/) first.
+        This repository is public: do not post passwords, API keys or private addresses.
+  - type: input
+    id: version
+    attributes:
+      label: Smart Transcode version
+      description: Shown at the top of the page and in the footer, for example 1.0.
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: How do you run it?
+      options: [Linux service (install.sh), Docker, Podman (rootless), Podman (rootful), Other]
+    validations:
+      required: true
+  - type: dropdown
+    id: gpu
+    attributes:
+      label: Encoder
+      options: [NVIDIA (NVENC), Intel (Quick Sync / VA-API), AMD (VA-API), CPU only, Not sure]
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect?
+      description: Include the steps that led to it.
+    validations:
+      required: true
+  - type: textarea
+    id: report
+    attributes:
+      label: Support report
+      description: In Smart Transcode: Settings → Debug → Report a problem → Copy support report, then paste it here. Paths and IP addresses are already removed. Read it before you post.
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else
+      description: Your compose file with secrets removed, screenshots, the output of the command that failed.
