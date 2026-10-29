@@ -6,15 +6,15 @@ original.
 
 **This repository is for support only. It contains no source code.** Smart Transcode is not open source.
 
-- Website, downloads and documentation: **https://transcode.aarondyck.ca**
-- Install: https://transcode.aarondyck.ca/install
+- Website, downloads and documentation: **https://smart-transcode.aarondyck.ca**
+- Install: https://smart-transcode.aarondyck.ca/install
 - Docker image: `aarondyck/smart-transcode`
 
 ## Report a problem or ask for something
 
 [Open an issue](../../issues/new/choose) and pick the form that fits.
 
-1. Check the [troubleshooting pages](https://transcode.aarondyck.ca/docs/troubleshooting/) first; they are specific to
+1. Check the [troubleshooting pages](https://smart-transcode.aarondyck.ca/docs/troubleshooting/) first; they are specific to
    how you run it (Linux service, Docker or Podman).
 2. In Smart Transcode open **Settings → Debug → Report a problem** and press **Copy support report**. Paste it into the
    issue. It holds the version, platform, ffmpeg and encoders and the latest warnings, with folder and file paths and
@@ -28,4 +28,4 @@ Security problems: do not open a public issue. Use **Security → Report a vulne
 ## Copyright
 
 © Aaron Dyck. All rights reserved. See [LICENSE.md](LICENSE.md) and the
-[legal page](https://transcode.aarondyck.ca/legal).
+[legal page](https://smart-transcode.aarondyck.ca/legal).
